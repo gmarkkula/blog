@@ -14,6 +14,19 @@ minify:
     disableXML: true
     minifyOutput: true
 
+menu:
+  main:
+  - identifier: tags
+    name: Tags
+    #pre: <i class='fa fa-heart'></i>
+    url: /tags/
+    weight: -20
+  - identifier: about
+    name: About
+    #pre: <i class='fa fa-heart'></i>
+    url: /about/
+    weight: -10
+
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     title: Modeλing Behaviωr
@@ -28,7 +41,7 @@ params:
     comments: false
     defaultTheme: auto
     disableThemeToggle: false
-    disableSpecial1stPost: false
+    disableSpecial1stPost: true
 
     assets:
         favicon: "<link / abs url>"
@@ -55,9 +68,9 @@ params:
               url: tags
 
     # home-info mode
-    homeInfoParams:
-        Title: #"Hi there \U0001F44B"
-        Content: Welcome to my blog
+    #homeInfoParams:
+        #Title: #"Hi there \U0001F44B"
+        #Content: 
 
     socialIcons:
         - name: twitter
