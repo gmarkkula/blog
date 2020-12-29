@@ -11,6 +11,7 @@ Todo:
     * Flytta ut implementationen i separat modul
     * Interaktivt exempel
     * Lite mer dokumentation/kommentarer
+* Länka in bilder från supplementsfoldern istället?
 * Flytta in koden i denna repo
 * Skriv något lite bättre i About
 
@@ -82,7 +83,7 @@ And for the two-peaked distribution:
 
 ![Random values drawn from a distribution with two bell curve peaks, and an estimator getting updated from these observations, with a larger update for negative prediction errors](twogaussians_onepessimistestimator.gif)
 
-See what happened here? This type of expectation no longer converges to the average of the distribution, but instead to a lower, more *pessimistic* expectation. It will converge to a place where most often the observations are larger than its expectation, but since it only moves very little in response to these errors, and instead it moves a lot to the left at those few occasions where things happen to be even worse than it expects, things balance out. 
+See what happened here? This type of expectation no longer converges to the average of the distribution, but instead to a lower, more *pessimistic* expectation. It will converge to a place where most often the observations are larger than its expectation, but since it moves relatively little in response to these errors, and instead moves a lot to the left on those few occasions where things happen to be even worse than it expects, things still balance out. 
 
 I find this a fascinating perspective on what it might mean to be a pessimist. Typically, this is defined as "having low expectations" or something similar - but where does that expectation come from? The reinforcement learning type of definition operates at this level instead, defining a pessimist as someone who isn't very impressed by things going better than expected, but who responds to any setback with a resounding "told you so!!". Conversely, an optimist is someone who says "told you so!!" when things go better than expected, and who isn't much affected by setbacks. In other words, the optimist is this guy:
 
