@@ -1,13 +1,20 @@
 ---
 title: "The optimist-pessimist ping-pong"
-date: 2020-12-01T07:04:28Z
+date: 2020-12-29T07:04:28Z
 draft: true
 ---
 
 <!-- 
 Todo:
-* Fotnoter på nåt vis?
-* A/B/C i figs
+
+* Fixa i ordning koden 
+    * Flytta ut implementationen i separat modul
+    * Interaktivt exempel
+    * Lite mer dokumentation/kommentarer
+* Flytta in koden i denna repo
+* Skriv något lite bättre i About
+
+* Fotnoter på nåt vis? T ex tooltip m CSS?
 -->
 
 *How does your brain learn to distinguish good things from bad things, and perhaps even more difficult: something average from something that might either be very good or very bad? Are you an optimist or a pessimist, or both? And how exactly does one become one or the other? This post talks about what kind of methods the brain mights be using for learning from experience, and an interesting recent development in this area combining both AI and neuroscience. The text covers some mathematical concepts, but tries to do so in a generally accessible way.*
@@ -24,7 +31,7 @@ It is clear that as decision-makers we quite often have this type of foreknowled
 
 ![A buildup of random values drawn from a bell curve distribution](onegaussian.gif)
 
-But how do these past experiences persist in the brain to form foreknowledge for decisions? One possibility could be that the brain remembers every single past event and exactly how well or badly it turned out, in other words storing the full and detailed set of outcomes shown above. That, however, doesn't sound quite economical. (Nor does it seem very similar to the subjective feeling of what decision-making is like, but that's not necessarily a good indicator of actual brain function). In mathematical models of reinforcement learning, for mice, humans, and robots alike, it is often instead assumed that decision-makers just keep track of a single expected value for the decision, roughly corresponding to an *average* over the values experienced in the past. More specifically, the models suggest that this happens by a simple rule: When the actual obtained value from a decision is better than our expectation (the pizza is tastier, the ping pong opponent more thrown off guard by our serve), for future reference we increase our expectation for that decision somewhat, and vice versa if the outcome is worse than expected. Here is the same life history as above, but now slowed down a little, and with an expected value - starting at zero (just to start somewhere) - and then ping ponging (!) about as it is getting updated after each observation:
+But how do these past experiences persist in the brain to form foreknowledge for decisions? One possibility could be that the brain remembers every single past event and exactly how well or badly it turned out, in other words storing the full and detailed set of outcomes shown above. That, however, doesn't sound quite economical. (Nor does it seem very similar to the subjective feeling of what decision-making is like, but that's not necessarily a good indicator of actual brain function). In mathematical models of reinforcement learning, for mice, humans, and robots alike, it is often instead assumed that decision-makers just keep track of a single expected value for the decision, roughly corresponding to an *average* over the values experienced in the past. More specifically, the models suggest that this happens by a simple rule: When the actual obtained value from a decision is better than our expectation (the pizza is tastier, the ping pong opponent more thrown off guard by our serve), for future reference we increase our expectation for that decision somewhat, and vice versa if the outcome is worse than expected. Here is the same life history as above, but now slowed down a little, and now also with an expected value, the little ball starting at zero (just to start somewhere) and then ping ponging (!) about, after each new observation taking a small step toward that observation:
 
 ![An expected average value prediction getting updated based on the same random values as above](onegaussian_oneestimator.gif)
 
@@ -34,7 +41,7 @@ This is all well and good, but it only really starts becoming useful when I appl
 
 ![Random values drawn from two bell curve distributions with slightly different averages](twogaussians.gif)
 
-The value observations above come from two slightly different distributions - in other words the average values of the two options are not the same, but you can see that without the true distribution curves (which in reality we never have access to) things look rather messy, and it's hard to know what option to prefer. The reinforcement learning assumption, then, is that both of these past sets of experiences are kept track of by the same rule as mentioned above, but separately for each decision option. Here is the same set of observations again, slower, and with two of those little reinforcement learning ping pong balls, one for each decision option:
+The value observations above come from two slightly different distributions - in other words the average values of the two options are not the same, but you can see that without the true distribution curves (which in reality we never have access to) things look rather messy, and it's hard to know what option to prefer. The reinforcement learning assumption, then, is that both of these past sets of experiences are kept track of by the same rule as mentioned above, but separately for each decision option. Here is the same set of observations again, slower, and with two of those little reinforcement learning ping pong balls, one for each decision option (the purple ball responds to the purple observations, and the orange ball to the orange observations):
 
 ![Expected average value predictions getting updated for the same random values drawn as in the previous figure](twogaussians_oneestimator.gif)
 

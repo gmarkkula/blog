@@ -16,14 +16,12 @@ minify:
 
 menu:
   main:
-  - identifier: tags
-    name: Tags
-    #pre: <i class='fa fa-heart'></i>
-    url: /tags/
-    weight: -20
+  #- identifier: tags
+  #  name: Tags
+  #  url: /tags/
+  #  weight: -20
   - identifier: about
     name: About
-    #pre: <i class='fa fa-heart'></i>
     url: /about/
     weight: -10
 
@@ -31,7 +29,7 @@ params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     title: Modeλing Behaviωr
     description: "ExampleSite description"
-    author: Gustav
+    #author: Gustav
     # author: ["Me", "You"] # multiple authors
 
     images: "<link or path of image for opengraph, twitter-cards>"
@@ -39,8 +37,8 @@ params:
     ShowReadingTime: true
     ShowShareButtons: false
     comments: false
-    defaultTheme: auto
-    disableThemeToggle: false
+    defaultTheme: day
+    disableThemeToggle: true
     disableSpecial1stPost: true
 
     assets:
