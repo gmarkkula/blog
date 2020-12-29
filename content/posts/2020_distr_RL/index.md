@@ -95,6 +95,6 @@ AI researchers call this *distributional reinforcement learning*, and in an exci
 
 It is probably not too far-fetched to assume, then, that also we humans engage in something like distributional reinforcement learning, with different value-estimating groups of neurons in our brains making diverse predictions about our decision options, from gloomy to rosy. In that sense, we are all simultaneously both pessimists and optimists.
 
-If you want a little more mathsy detail, interactive figures, and/or the code behind the figures in this post, see here.
+*(If you want a little more mathsy detail, the code behind the figures in this post, and/or an interactive figure to play around with, there is a Jupyter Notebook that you can view statically or download from Github [here](https://github.com/gmarkkula/blog/blob/main/content/posts/2020_distr_RL/distr_RL.ipynb), or interact with online on Binder [here](https://notebooks.gesis.org/binder/jupyter/user/gmarkkula-0c9ab-bb1ce2d4d6f01b0-n5r3etkm/notebooks/distr_RL.ipynb).)*
 
 
