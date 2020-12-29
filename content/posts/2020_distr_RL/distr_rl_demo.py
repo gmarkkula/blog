@@ -283,6 +283,8 @@ class DistrRLDemo:
             axes.spines['bottom'].set_visible(False)
         if (self.plot_ylabel is None) and (not self.plot_yticks):
             axes.spines['left'].set_visible(False)
+        
+        plt.tight_layout()
 
     
     def plot_estimator_trajectories(self, axes = None):

@@ -1,20 +1,12 @@
 ---
 title: "The optimist-pessimist ping-pong"
 date: 2020-12-29T07:04:28Z
-draft: true
+draft: false
 ---
 
 <!-- 
 Todo:
-
-* Fixa i ordning koden 
-    * Flytta ut implementationen i separat modul
-    * Interaktivt exempel
-    * Lite mer dokumentation/kommentarer
-* Länka in bilder från supplementsfoldern istället?
-* Flytta in koden i denna repo
 * Skriv något lite bättre i About
-
 * Fotnoter på nåt vis? T ex tooltip m CSS?
 -->
 

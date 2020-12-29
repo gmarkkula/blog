@@ -37,7 +37,7 @@ params:
     ShowReadingTime: true
     ShowShareButtons: false
     comments: false
-    defaultTheme: day
+    defaultTheme: light
     disableThemeToggle: true
     disableSpecial1stPost: true
 
