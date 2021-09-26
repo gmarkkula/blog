@@ -1,11 +1,11 @@
 ---
 title: Fruiting trees and human logarithms
 date: 2021-02-01T07:31:59Z
-draft: true
+draft: false
 math: true
 ---
 
-*Regardless of how much maths you know or do, you have probably heard about logarithms. Perhaps especially in the context of the "logarithmic scale" which is sometimes used to show data in graphs, for example to track the growth of a pandemic. In my job I use logarithms quite a lot, but there is still something slightly baffling about them, so I thought I'd devote this post to logarithms: what they are in terms of a general maths tool, but also how they - interestingly - turn up in human behaviour sometimes. How, and why?
+Regardless of how much maths you know or do, you have probably heard about logarithms. Perhaps especially in the context of the "logarithmic scale" which is sometimes used to show data in graphs, for example to track the growth of a pandemic. In my job I use logarithms quite a lot, but there is still something slightly baffling about them, so I thought I'd devote this post to logarithms: what they are in terms of a general maths tool, but also how they - interestingly - turn up in human behaviour sometimes. How, and why?
 
 Perhaps the easiest way to intuitively think about what a logarithm is, is that it is the opposite (or "inverse") of exponential growth. And by exponential growth I mean the kind of growth you get when you have a number of something, for example a number of people infected with a disease, and that number gets repeatedly scaled up by the same multiplication over and over, for example because each infected person infects a number of other people within a certain time, and then the same thing happens again and again. This pandemic example is only a little too familiar though, so let's switch to a nicer one: the number of branches or fruits in a growing tree, Click in the image to grow a tree, click again to grow a new one. 
 
