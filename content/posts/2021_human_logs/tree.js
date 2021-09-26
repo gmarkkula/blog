@@ -175,6 +175,7 @@ function mouseAtBase() {
   return Math.sqrt((mouseX - width/2) ** 2 + (mouseY - height) ** 2) < 30;
 }
 
+/*
 // based on https://www.javascripttutorial.net/dom/css/check-if-an-element-is-visible-in-the-viewport/
 function isOutsideViewport(element) {
     const rect = element.getBoundingClientRect();
@@ -198,10 +199,12 @@ function isInViewport(element) {
     );
 }
 
+*/
+
 function draw() {
 	
-  if (!isInViewport(canvasDOMElement))
-    return;
+  //if (!isInViewport(canvasDOMElement))
+  //  return;
   
   deltaT = deltaTime / 1000;
   deltaT = min(deltaT, 0.1);
