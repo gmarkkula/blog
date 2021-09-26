@@ -214,8 +214,8 @@ function draw() {
   background(220);
   strokeWeight(1)
   
-  const rect = window.frameElement.getBoundingClientRect()
-  text(rect.top.toString() + ', ' + rect.left.toString() + ', ' + rect.bottom.toString() + ', ' + rect.right.toString(), 10, 20);
+  //const rect = window.frameElement.getBoundingClientRect()
+  //text(rect.top.toString() + ', ' + rect.left.toString() + ', ' + rect.bottom.toString() + ', ' + rect.right.toString(), 10, 20);
   
   translate(baseX, baseY); 
   myPush();
