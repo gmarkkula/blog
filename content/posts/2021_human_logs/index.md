@@ -1,7 +1,7 @@
 ---
 title: Fruiting trees and human logarithms
 date: 2021-02-01T07:31:59Z
-draft: false
+draft: true
 math: true
 ---
 
