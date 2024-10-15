@@ -1,0 +1,2 @@
+- genomgång av multiprocessing för modellering
+- genomgång min approach till modellutveckling med Jupyter Notebooks och GitHub
